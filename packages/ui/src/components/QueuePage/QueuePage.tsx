@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Store } from '../../hooks/useStore';
 import { JobCard } from '../JobCard/JobCard';
 import { QueueActions } from '../QueueActions/QueueActions';
@@ -20,10 +20,14 @@ export const QueuePage = ({
     return <section>Queue Not found</section>;
   }
 
+  const [currentFilter, setCurrentFilter] = useState("")
+
+  const filteredJobs = currentFilter ? queue.jobs.filter((job)=> job.name === currentFilter) : queue.jobs;
+
   return (
     <section>
       <div className={s.stickyHeader}>
-        <StatusMenu queue={queue} actions={actions} />
+        <StatusMenu queue={queue} actions={actions} setFilter={setCurrentFilter} />
         <div className={s.actionContainer}>
           <div>
             {queue.jobs.length > 0 && !queue.readOnlyMode && (
@@ -38,7 +42,7 @@ export const QueuePage = ({
           <Pagination pageCount={queue.pagination.pageCount} />
         </div>
       </div>
-      {queue.jobs.map((job) => (
+      {filteredJobs.map((job) => (
         <JobCard
           key={job.id}
           job={job}
