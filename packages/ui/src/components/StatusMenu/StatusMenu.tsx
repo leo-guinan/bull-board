@@ -11,12 +11,13 @@ import {Filter} from '../Filter/Filter';
 export const StatusMenu = ({queue, actions, setFilter}: { queue: AppQueue; actions: Store['actions']; setFilter: (jobName: string)=>void; }) => {
     const {url} = useRouteMatch();
 
-    const jobNames = queue.jobs.map((job) => {
-        return {
-            text: job.name,
-            value: job.name,
-        }
-    });
+    const jobNames = [...new Set(queue.jobs.map((job) => job.name))].map((jobName) => ({
+        text: jobName,
+        value: jobName,
+    }));
+
+    // eslint-disable-next-line no-console
+    console.log(jobNames);
 
     return (
         <div className={s.statusMenu}>

@@ -22,17 +22,17 @@ export const QueuePage = ({
 
   const [currentFilter, setCurrentFilter] = useState("")
 
-  const filteredJobs = currentFilter ? queue.jobs.filter((job)=> job.name === currentFilter) : queue.jobs;
+  const filteredQueue = currentFilter ? {...queue, jobs: queue.jobs.filter((job)=> job.name === currentFilter) } : queue;
 
   return (
     <section>
       <div className={s.stickyHeader}>
-        <StatusMenu queue={queue} actions={actions} setFilter={setCurrentFilter} />
+        <StatusMenu queue={filteredQueue} actions={actions} setFilter={setCurrentFilter} />
         <div className={s.actionContainer}>
           <div>
-            {queue.jobs.length > 0 && !queue.readOnlyMode && (
+            {filteredQueue.jobs.length > 0 && !queue.readOnlyMode && (
               <QueueActions
-                queue={queue}
+                queue={filteredQueue}
                 actions={actions}
                 status={selectedStatus[queue.name]}
                 allowRetries={queue.allowRetries}
@@ -42,7 +42,7 @@ export const QueuePage = ({
           <Pagination pageCount={queue.pagination.pageCount} />
         </div>
       </div>
-      {filteredJobs.map((job) => (
+      {filteredQueue.jobs.map((job) => (
         <JobCard
           key={job.id}
           job={job}

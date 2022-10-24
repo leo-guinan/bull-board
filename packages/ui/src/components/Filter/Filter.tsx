@@ -11,7 +11,7 @@ type FilterProps = {
 export const Filter = ({jobNames, onSelect}: FilterProps) => {
     return (
         <>
-            <SelectField options={jobNames} onSelect={(e) => onSelect((e.target as HTMLSelectElement).value)} />
+            <SelectField options={[{text: "Select All", value: ""},...jobNames]} onChange={(e) => onSelect((e.target as HTMLSelectElement).value)} />
         </>
     )
 }
