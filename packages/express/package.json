@@ -1,6 +1,6 @@
 {
   "name": "@leo-guinan/express",
-  "version": "0.0.2-0",
+  "version": "0.0.2",
   "description": "Express.js server adapter for Bull-Board package",
   "keywords": [
     "bull",
@@ -28,8 +28,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@leo-guinan/api": "0.0.2-0",
-    "@leo-guinan/ui": "0.0.2-0",
+    "@leo-guinan/api": "0.0.1",
+    "@leo-guinan/ui": "0.0.1",
     "ejs": "3.1.7",
     "express": "4.17.3"
   },
