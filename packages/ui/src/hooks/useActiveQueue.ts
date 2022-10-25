@@ -1,4 +1,4 @@
-import { AppQueue } from '@filtered-bull-board/api/dist/typings/app';
+import { AppQueue } from '@leo-guinan/api/dist/typings/app';
 import { useActiveQueueName } from './useActiveQueueName';
 import { Store } from './useStore';
 

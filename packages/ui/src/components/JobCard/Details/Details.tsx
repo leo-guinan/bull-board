@@ -3,7 +3,7 @@ import { useDetailsTabs } from '../../../hooks/useDetailsTabs';
 import { Button } from '../Button/Button';
 import s from './Details.module.css';
 import { DetailsContent } from './DetailsContent/DetailsContent';
-import { AppJob, Status } from '@filtered-bull-board/api/typings/app';
+import { AppJob, Status } from '@leo-guinan/api/typings/app';
 
 interface DetailsProps {
   job: AppJob;

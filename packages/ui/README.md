@@ -1,10 +1,10 @@
-# <img alt="@bull-board" src="https://raw.githubusercontent.com/felixmosh/bull-board/master/packages/ui/src/static/images/logo.svg" width="35px" /> @filtered-bull-board/ui 
+# <img alt="@bull-board" src="https://raw.githubusercontent.com/felixmosh/bull-board/master/packages/ui/src/static/images/logo.svg" width="35px" /> @leo-guinan/ui 
 
 UI packages of `bull-board`.
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@filtered-bull-board/ui">
-    <img alt="npm version" src="https://img.shields.io/npm/v/@filtered-bull-board/ui">
+  <a href="https://www.npmjs.com/package/@leo-guinan/ui">
+    <img alt="npm version" src="https://img.shields.io/npm/v/@leo-guinan/ui">
   </a>
   <a href="https://www.npmjs.com/package/bull-board">
     <img alt="npm downloads" src="https://img.shields.io/npm/dw/bull-board">

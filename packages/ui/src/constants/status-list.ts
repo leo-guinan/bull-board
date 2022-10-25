@@ -1,5 +1,5 @@
-import { KeyOf } from '@filtered-bull-board/api/typings/utils';
-import { STATUSES } from '@filtered-bull-board/api/src/constants/statuses';
+import { KeyOf } from '@leo-guinan/api/typings/utils';
+import { STATUSES } from '@leo-guinan/api/src/constants/statuses';
 
 export const STATUS_LIST: Readonly<KeyOf<typeof STATUSES>> = [
   STATUSES.latest as any,

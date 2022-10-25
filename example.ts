@@ -2,10 +2,10 @@ import * as Bull from 'bull';
 import Queue3 from 'bull';
 import { Queue as QueueMQ, QueueScheduler, Worker } from 'bullmq';
 import express from 'express';
-import { BullMQAdapter } from '@filtered-bull-board/api/src/queueAdapters/bullMQ';
-import { BullAdapter } from '@filtered-bull-board/api/src/queueAdapters/bull';
-import { createBullBoard } from '@filtered-bull-board/api/src';
-import { ExpressAdapter } from '@filtered-bull-board/express/src';
+import { BullMQAdapter } from '@leo-guinan/api/src/queueAdapters/bullMQ';
+import { BullAdapter } from '@leo-guinan/api/src/queueAdapters/bull';
+import { createBullBoard } from '@leo-guinan/api/src';
+import { ExpressAdapter } from '@leo-guinan/express/src';
 
 const redisOptions = {
   port: 6379,

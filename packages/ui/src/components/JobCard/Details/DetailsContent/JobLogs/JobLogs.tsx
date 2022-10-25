@@ -1,4 +1,4 @@
-import { AppJob } from '@filtered-bull-board/api/typings/app';
+import { AppJob } from '@leo-guinan/api/typings/app';
 import React, { SyntheticEvent, useEffect, useRef, useState } from 'react';
 import { useInterval } from '../../../../../hooks/useInterval';
 import { InputField } from '../../../../Form/InputField/InputField';

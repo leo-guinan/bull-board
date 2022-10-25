@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Progress.module.css';
 import cn from 'clsx';
-import { Status } from '@filtered-bull-board/api/typings/app';
-import { STATUSES } from '@filtered-bull-board/api/src/constants/statuses';
+import { Status } from '@leo-guinan/api/typings/app';
+import { STATUSES } from '@leo-guinan/api/src/constants/statuses';
 
 export const Progress = ({
   percentage,

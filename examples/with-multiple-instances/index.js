@@ -1,6 +1,6 @@
-const { createBullBoard } = require('@filtered-bull-board/api');
-const { BullMQAdapter } = require('@filtered-bull-board/api/bullMQAdapter');
-const { ExpressAdapter } = require('@filtered-bull-board/express');
+const { createBullBoard } = require('@leo-guinan/api');
+const { BullMQAdapter } = require('@leo-guinan/api/bullMQAdapter');
+const { ExpressAdapter } = require('@leo-guinan/express');
 const { Queue: QueueMQ, Worker, QueueScheduler } = require('bullmq');
 const express = require('express');
 

@@ -4,7 +4,7 @@ import {
   BullBoardQueues,
   ControllerHandlerReturnType,
   IServerAdapter,
-} from '@filtered-bull-board/api/dist/typings/app';
+} from '@leo-guinan/api/dist/typings/app';
 
 import fastifyStatic from '@fastify/static';
 import pointOfView from '@fastify/view';

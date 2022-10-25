@@ -5,8 +5,8 @@ import { TrashIcon } from '../../Icons/Trash';
 import { Tooltip } from '../../Tooltip/Tooltip';
 import { Button } from '../Button/Button';
 import s from './JobActions.module.css';
-import { Status } from '@filtered-bull-board/api/typings/app';
-import { STATUSES } from '@filtered-bull-board/api/src/constants/statuses';
+import { Status } from '@leo-guinan/api/typings/app';
+import { STATUSES } from '@leo-guinan/api/src/constants/statuses';
 
 interface JobActionsProps {
   status: Status;

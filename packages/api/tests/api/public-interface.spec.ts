@@ -1,4 +1,4 @@
-import * as bullBoard from '@filtered-bull-board/api';
+import * as bullBoard from '@leo-guinan/api';
 
 describe('lib public interface', () => {
   it('should save the interface', () => {

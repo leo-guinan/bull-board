@@ -1,8 +1,8 @@
 import { format, formatDistance, getYear, isToday } from 'date-fns';
 import React from 'react';
 import s from './Timeline.module.css';
-import { AppJob, Status } from '@filtered-bull-board/api/typings/app';
-import { STATUSES } from '@filtered-bull-board/api/src/constants/statuses';
+import { AppJob, Status } from '@leo-guinan/api/typings/app';
+import { STATUSES } from '@leo-guinan/api/src/constants/statuses';
 
 type TimeStamp = number | Date;
 
