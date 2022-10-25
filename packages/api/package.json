@@ -1,6 +1,6 @@
 {
-  "name": "@filtered-bull-board/api",
-  "version": "0.0.4",
+  "name": "@leo-guinan/api",
+  "version": "0.0.5",
   "description": "Core server APIs of bull-board",
   "keywords": [
     "bull",

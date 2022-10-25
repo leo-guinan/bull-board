@@ -1,6 +1,6 @@
 {
-  "name": "@filtered-bull-board/ui",
-  "version": "0.0.4",
+  "name": "@leo-guinan/ui",
+  "version": "0.0.5",
   "description": "Bull-Board's UI package",
   "keywords": [
     "bull",
@@ -27,7 +27,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@filtered-bull-board/api": "0.0.4"
+    "@leo-guinan/api": "0.0.5"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
