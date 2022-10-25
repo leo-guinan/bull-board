@@ -28,8 +28,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "4.6.0",
-    "@bull-board/ui": "4.6.0",
+    "@bull-board/api": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/api?master&scripts.postinstall=npm%20run%20build",
+    "@bull-board/ui": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/ui?master&scripts.postinstall=npm%20run%20build",
     "ejs": "3.1.7",
     "express": "4.17.3"
   },
