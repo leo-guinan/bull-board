@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "felixmosh",
+  "author": "leo-guinan",
   "license": "ISC",
   "dependencies": {
     "@leo-guinan/fastify": "^4.2.1",

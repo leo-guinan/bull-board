@@ -16,7 +16,7 @@
     "directory": "packages/ui"
   },
   "license": "MIT",
-  "author": "felixmosh",
+  "author": "leo-guinan",
   "files": [
     "dist",
     "typings"

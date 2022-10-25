@@ -16,7 +16,7 @@
     "directory": "packages/api"
   },
   "license": "MIT",
-  "author": "felixmosh",
+  "author": "leo-guinan",
   "main": "dist/src/index.js",
   "files": [
     "dist",

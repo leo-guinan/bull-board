@@ -18,7 +18,7 @@
     "directory": "packages/express"
   },
   "license": "MIT",
-  "author": "felixmosh",
+  "author": "leo-guinan",
   "main": "dist/index.js",
   "files": [
     "dist"
