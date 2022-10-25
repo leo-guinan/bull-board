@@ -28,8 +28,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/api?master&scripts.postinstall=yarn%20build",
-    "@bull-board/ui": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/ui?master&scripts.postinstall=yarn%20build",
+    "@bull-board/api": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/api?master&scripts.postinstall=npm%20run%20build",
+    "@bull-board/ui": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/ui?master&scripts.postinstall=npm%20run%20build",
     "@fastify/static": "^6.4.0",
     "@fastify/view": "^7.0.0",
     "ejs": "^3.1.8"

@@ -27,7 +27,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/api?master&scripts.postinstall=yarn%20build"
+    "@bull-board/api": "4.6.0"
   },
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
