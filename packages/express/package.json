@@ -1,6 +1,6 @@
 {
   "name": "@leo-guinan/express",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Express.js server adapter for Bull-Board package",
   "keywords": [
     "bull",
