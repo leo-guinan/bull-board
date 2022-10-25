@@ -5,7 +5,7 @@ With this library you get a beautiful UI for visualizing what's happening with e
 
 <p align="center">
   <a href="https://www.npmjs.com/org/bull-board">
-    <img alt="npm downloads" src="https://img.shields.io/npm/dw/@bull-board/api">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dw/@filtered-bull-board/api">
   </a>
   <a href="https://github.com/felixmosh/bull-board/blob/master/LICENSE">
     <img alt="licence" src="https://img.shields.io/github/license/felixmosh/bull-board">
@@ -19,12 +19,12 @@ With this library you get a beautiful UI for visualizing what's happening with e
 
 | Name                                                                     | Version                                                           |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [@bull-board/api](https://www.npmjs.com/package/@bull-board/api)         | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/api)     |
-| [@bull-board/ui](https://www.npmjs.com/package/@bull-board/ui)           | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/ui)      |
-| [@bull-board/express](https://www.npmjs.com/package/@bull-board/express) | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/express) |
-| [@bull-board/fastify](https://www.npmjs.com/package/@bull-board/fastify) | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/fastify) |
-| [@bull-board/koa](https://www.npmjs.com/package/@bull-board/koa)         | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/koa)     |
-| [@bull-board/hapi](https://www.npmjs.com/package/@bull-board/hapi)       | ![npm (scoped)](https://img.shields.io/npm/v/@bull-board/hapi)    |
+| [@filtered-bull-board/api](https://www.npmjs.com/package/@filtered-bull-board/api)         | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/api)     |
+| [@filtered-bull-board/ui](https://www.npmjs.com/package/@filtered-bull-board/ui)           | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/ui)      |
+| [@filtered-bull-board/express](https://www.npmjs.com/package/@filtered-bull-board/express) | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/express) |
+| [@filtered-bull-board/fastify](https://www.npmjs.com/package/@filtered-bull-board/fastify) | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/fastify) |
+| [@filtered-bull-board/koa](https://www.npmjs.com/package/@filtered-bull-board/koa)         | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/koa)     |
+| [@filtered-bull-board/hapi](https://www.npmjs.com/package/@filtered-bull-board/hapi)       | ![npm (scoped)](https://img.shields.io/npm/v/@filtered-bull-board/hapi)    |
 
 ## Notes
 
@@ -42,23 +42,23 @@ If you want to learn more about queues ([Bull](https://github.com/OptimalBits/bu
 To add it to your project start by installing a server framework specific adapter to your dependencies list:
 
 ```sh
-yarn add @bull-board/express
+yarn add @filtered-bull-board/express
 # or
-yarn add @bull-board/fastify
+yarn add @filtered-bull-board/fastify
 # or
-yarn add @bull-board/hapi
+yarn add @filtered-bull-board/hapi
 # or
-yarn add @bull-board/koa
+yarn add @filtered-bull-board/koa
 ```
 Or
 ```sh
-npm i @bull-board/express
+npm i @filtered-bull-board/express
 # or
-npm i @bull-board/fastify
+npm i @filtered-bull-board/fastify
 # or
-npm i @bull-board/hapi
+npm i @filtered-bull-board/hapi
 # or
-npm i @bull-board/koa
+npm i @filtered-bull-board/koa
 ```
 
 ## Hello World
@@ -67,10 +67,10 @@ npm i @bull-board/koa
 const express = require('express');
 const Queue = require('bull');
 const QueueMQ = require('bullmq');
-const { createBullBoard } = require('@bull-board/api');
-const { BullAdapter } = require('@bull-board/api/bullAdapter');
-const { BullMQAdapter } = require('@bull-board/api/bullMQAdapter');
-const { ExpressAdapter } = require('@bull-board/express');
+const { createBullBoard } = require('@filtered-bull-board/api');
+const { BullAdapter } = require('@filtered-bull-board/api/bullAdapter');
+const { BullMQAdapter } = require('@filtered-bull-board/api/bullMQAdapter');
+const { ExpressAdapter } = require('@filtered-bull-board/express');
 
 const someQueue = new Queue('someQueueName', {
   redis: { port: 6379, host: '127.0.0.1', password: 'foobared' },
@@ -115,9 +115,9 @@ Makes the UI as read only, hides all queue & job related actions
 ```js
 const Queue = require('bull')
 const QueueMQ = require('bullmq')
-const { createBullBoard } = require('@bull-board/api')
-const { BullMQAdapter } = require('@bull-board/api/bullMQAdapter')
-const { BullAdapter } = require('@bull-board/api/bullAdapter')
+const { createBullBoard } = require('@filtered-bull-board/api')
+const { BullMQAdapter } = require('@filtered-bull-board/api/bullMQAdapter')
+const { BullAdapter } = require('@filtered-bull-board/api/bullAdapter')
 
 const someQueue = new Queue()
 const someOtherQueue = new Queue()
@@ -137,9 +137,9 @@ When set to `false` the UI removes the job retry buttons for a queue. This optio
 
 ```js
 const QueueMQ = require('bullmq')
-const { createBullBoard } = require('@bull-board/api')
-const { BullMQAdapter } = require('@bull-board/api/bullMQAdapter')
-const { BullAdapter } = require('@bull-board/api/bullAdapter')
+const { createBullBoard } = require('@filtered-bull-board/api')
+const { BullMQAdapter } = require('@filtered-bull-board/api/bullMQAdapter')
+const { BullAdapter } = require('@filtered-bull-board/api/bullAdapter')
 
 const someQueue = new Queue()
 const someOtherQueue = new Queue()
@@ -160,9 +160,9 @@ If you host your express service on a different path than root (/) ie. https://<
 
 ```js
 const Queue = require('bull')
-const { createBullBoard } = require('@bull-board/api')
-const { BullAdapter } = require('@bull-board/api/bullAdapter')
-const { ExpressAdapter } = require('@bull-board/express')
+const { createBullBoard } = require('@filtered-bull-board/api')
+const { BullAdapter } = require('@filtered-bull-board/api/bullAdapter')
+const { ExpressAdapter } = require('@filtered-bull-board/express')
 
 const basePath = '/my-base-path';
 

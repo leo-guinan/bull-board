@@ -1,6 +1,6 @@
 {
-  "name": "@bull-board/hapi",
-  "version": "4.6.0",
+  "name": "@filtered-bull-board/hapi",
+  "version": "0.0.1",
   "description": "Hapi.js server adapter for Bull-Board package",
   "keywords": [
     "bull",
@@ -29,8 +29,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@bull-board/api": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/api?master&scripts.postinstall=npm%20run%20build",
-    "@bull-board/ui": "https://gitpkg.now.sh/leo-guinan/bull-board/packages/ui?master&scripts.postinstall=npm%20run%20build",
+    "@filtered-bull-board/api": "0.0.1",
+    "@filtered-bull-board/ui": "0.0.1",
     "@hapi/inert": "^6.0.5",
     "@hapi/vision": "^6.1.0",
     "ejs": "^3.1.7"

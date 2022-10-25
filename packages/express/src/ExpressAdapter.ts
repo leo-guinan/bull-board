@@ -5,7 +5,7 @@ import {
   ControllerHandlerReturnType,
   HTTPMethod,
   IServerAdapter,
-} from '@bull-board/api/dist/typings/app';
+} from '@filtered-bull-board/api/dist/typings/app';
 import ejs from 'ejs';
 import express, { Express, NextFunction, Request, Response, Router } from 'express';
 import { wrapAsync } from './helpers/wrapAsync';

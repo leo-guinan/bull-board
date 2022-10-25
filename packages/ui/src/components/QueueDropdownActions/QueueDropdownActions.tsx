@@ -1,4 +1,4 @@
-import { AppQueue } from '@bull-board/api/typings/app';
+import { AppQueue } from '@filtered-bull-board/api/typings/app';
 import { Content, Item, Root, Trigger, Portal } from '@radix-ui/react-dropdown-menu';
 import React from 'react';
 import { Store } from '../../hooks/useStore';

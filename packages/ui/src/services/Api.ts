@@ -1,5 +1,5 @@
-import { AppJob, RedisStats, Status } from '@bull-board/api/typings/app';
-import { GetQueuesResponse } from '@bull-board/api/typings/responses';
+import { AppJob, RedisStats, Status } from '@filtered-bull-board/api/typings/app';
+import { GetQueuesResponse } from '@filtered-bull-board/api/typings/responses';
 import Axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { toast } from 'react-toastify';
 

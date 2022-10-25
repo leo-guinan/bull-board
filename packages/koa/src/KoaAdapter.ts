@@ -4,7 +4,7 @@ import {
   BullBoardQueues,
   ControllerHandlerReturnType,
   IServerAdapter,
-} from '@bull-board/api/dist/typings/app';
+} from '@filtered-bull-board/api/dist/typings/app';
 
 import Koa from 'koa';
 import mount from 'koa-mount';

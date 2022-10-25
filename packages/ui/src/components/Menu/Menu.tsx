@@ -1,4 +1,4 @@
-import { AppQueue } from '@bull-board/api/typings/app';
+import { AppQueue } from '@filtered-bull-board/api/typings/app';
 import cn from 'clsx';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
