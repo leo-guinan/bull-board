@@ -1,6 +1,6 @@
 {
   "name": "@filtered-bull-board/koa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Koa.js server adapter for Bull-Board package",
   "keywords": [
     "bull",
@@ -28,8 +28,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@filtered-bull-board/api": "0.0.3",
-    "@filtered-bull-board/ui": "0.0.3",
+    "@filtered-bull-board/api": "0.0.4",
+    "@filtered-bull-board/ui": "0.0.4",
     "ejs": "^3.1.7",
     "koa": "^2.13.1",
     "koa-mount": "^4.0.0",
