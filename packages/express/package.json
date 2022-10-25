@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixmosh/bull-board.git",
+    "url": "git+https://github.com/leo-guinan/bull-board.git",
     "directory": "packages/express"
   },
   "license": "MIT",
